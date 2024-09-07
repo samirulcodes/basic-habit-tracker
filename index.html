@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Habit Tracker</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Daily Habit Tracker</h1>
+    </header>
+
+    <main>
+        <section id="add-habit">
+            <input type="text" id="habit-name" placeholder="Enter a new habit">
+            <button id="add-btn">Add Habit</button>
+        </section>
+
+        <section id="habit-list">
+            <h2>Your Habits</h2>
+            <ul id="habits"></ul>
+        </section>
+
+        <section id="habit-chart">
+            <h2>Habit Progress</h2>
+            <canvas id="habitChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="reset-streaks">
+            <button id="reset-btn">Reset Streaks</button>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
