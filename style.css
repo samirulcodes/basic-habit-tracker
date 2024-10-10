@@ -70,3 +70,58 @@ h1, h2 {
 #reset-btn:hover {
     background-color: #ff6666;
 }
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #add-habit {
+        flex-direction: column; /* Stack the input and button vertically */
+        align-items: center; /* Center align for better look */
+    }
+
+    #habit-name, #add-btn {
+        width: 100%; /* Full width input and button */
+        max-width: 300px; /* Limit the width to avoid stretching */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+
+    #habit-list li {
+        flex-direction: column; /* Stack the items inside the list */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .progress-bar {
+        width: 100%; /* Ensure the progress bar remains full width */
+    }
+
+    #reset-btn {
+        width: 100%; /* Full width button */
+        max-width: 300px; /* Limit the button's width */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce body padding on very small screens */
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    #add-habit {
+        flex-direction: column;
+    }
+
+    #habit-name, #add-btn {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    #habit-list li {
+        padding: 8px; /* Reduce padding in list items */
+    }
+
+    #reset-btn {
+        padding: 10px 15px; /* Reduce button padding */
+    }
+}
